@@ -1,6 +1,9 @@
 #!/bin/bash
+#The private IP of new spot instance
 newnode='172.31.22.98'
+#The cluster Master
 master='172.31.17.62:7077'
+#The RDD_id which will be checkpoint
 i=5,51,61
 scp -r /usr/local/spark/conf ubuntu@$newnode:/usr/local/spark
 scp /home/ubuntu/ispot/spark.txt ubuntu@$newnode:/home/ubuntu/ispot/
